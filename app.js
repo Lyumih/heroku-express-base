@@ -1,3 +1,4 @@
+require("dotenv").config()
 // подключение express
 const express = require("express");
 // создаем объект приложения
@@ -17,4 +18,4 @@ console.log(`Your PORT  is ${port}`);
 const NODE_ENV = process.env.NODE_ENV;
 console.log(`Your NODE_ENV is ${NODE_ENV}`);
 // начинаем прослушивать подключения на 3000 порту
-app.listen(process.env.PORT || 3001);
+app.listen(process.env.PORT || 3000);
